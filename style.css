@@ -8,3 +8,8 @@
       flex-direction: column;
     }
   }
+
+  .block {
+
+    font-family: monospace;
+  }
