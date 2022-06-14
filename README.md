@@ -1,1 +1,2 @@
-# mtm6302-exercise-1
+Full name: Isabel Acevedo
+Student number: 041014333
