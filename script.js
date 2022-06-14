@@ -1,19 +1,22 @@
 
-let emojiCount = 50
-const emojiContent = document.getElementById("content")
+const $content = document.getElementById('content')
+const content=[]
 
-for (let i = 128512; i < (128512 + emojiCount); i++)
+
+
+// for loop utilized to define {i}
+
+for(let i = 127799 ; i <= 127852; i++)
 {
-    let emojiCode = `&#${i};`
-    let emojiSpan = document.createElement('span')
-    emojiSpan.style.fontSize = '5rem'
-    emojiSpan.innerHTML += emojiCode
-
-    let emojiCodeTag = document.createElement('code')
-    emojiCodeTag.innerHTML += i
-    emojiContent.appendChild(emojiSpan)
-    emojiContent.appendChild(document.createElement('br'))
-    emojiContent.appendChild(emojiCodeTag)
-    emojiContent.appendChild(document.createElement('br'))
+    content.push(`
+     <div class="content">
+        <div class="code">&#${i}</div>
+        <div class="num">${i}</div>
+    </div>
+    `)
 }
-    
+
+
+
+$content.innerHTML = content.join('')
+
