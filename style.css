@@ -42,15 +42,4 @@ h1 {
 
 }
 
-@media (max-width: 1000px) {
-    
-  #content {
-      
-    }
-  }
-
-  .block {
-
-    font-family: monospace;
-  }
 
